@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1.8;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  /* aspect-ratio: 1/1; */
+  flex-grow: 1;
+}
+/* left column */
+#card_display{
+  border: 1px solid white;
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#card_info_img{
+  width: 80%;
+}
+
+#card_info_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  overflow-y: auto;
+}
+
+
+
+/* middle */
+
+#deck{
+  border: 1px solid white;
+  width: 40%;
+  height: 100vh;
+}
+
+.main{
+  height: 76%;
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.main_cards, .extra_cards{
+  width: 100%;
+}
+
+.main img, .extra img{
+  width: 10%;
+}
+
+.extra{
+  height: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y:auto;
+}
+
+
+/* right column */
+#search_area{
+  border: 1px solid white;
+  height: 100vh;
+  width: 25%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_list{
+  overflow-y: auto;
+  height: 95%;
+}
+
+.searchbox{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+}
+
+#search_area img{
+  width: 30%;
+  min-width: 70px;
+  margin-right: 1rem ;
+  transition: all 0.25s ease;
+}
+
+#search_area img:hover{
+  width: 35%;
+  overflow: auto;
+  min-width: 70px;
+  margin-right: 1rem ;
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0 2rem 1rem;
+}
+
+
+
